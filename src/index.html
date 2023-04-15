@@ -2,13 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Basic HTML/Tailwind starter</title>
-    <meta name="description" content="Basic HTML/Tailwind starter" />
-    <meta name="author" content="Daily Dev Tips" />
+    <title>คุณจะกดปุ่มไหม?</title>
+    <meta name="description" content="คุณจะกดปุ่มไหม?" />
+    <meta name="author" content="taka_tah" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+
+    <style>
+      .bg-wait {
+        background:url("assets/1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+  
+      .hover\:bg-click:hover {
+        background:url("assets/2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+
   </head>
-  <body>
-    <div class="w-screen h-screen bg-daily-dev-tips flex items-center justify-center">Welcome</div>
+
+  <body class="p-0 m-0 w-full h-auto max-w-full bg-sky-400 text-white">
+    <div id="mainHeader" class="flex w-full h-20 shadow-sm shadow-gray-800">
+      <div class="flex justify-center m-auto max-w-xl font-semibold gap-12">
+        <a href="#" class="h-14 w-full p-2 text-sm">
+          <div class="flex flex-col text-center">
+            <i class="fa fa-home fa-2x"  aria-hidden="true"></i>
+            <span class="whitespace-nowrap">หน้าหลัก</span>
+          </div>
+        </a>
+
+        <a href="#" class="h-14 w-full p-2 text-sm">
+          <div class="flex flex-col text-center">
+            <i class="fa fa-list fa-2x"  aria-hidden="true"></i>
+            <span class="whitespace-nowrap">คำถาม</span>
+          </div>
+        </a>
+
+        <a href="#" class="h-14 w-full p-2 text-sm">
+          <div class="flex flex-col text-center">
+
+            <i class="fa fa-bar-chart fa-2x"  aria-hidden="true"></i>
+
+            <span class="whitespace-nowrap">สถิติ</span>
+          </div>
+        </a>
+
+        <a href="#" class="h-14 w-full p-2 text-sm">
+          <div class="flex flex-col text-center">
+
+            <i class="fa fa-sign-in fa-2x"  aria-hidden="true"></i>
+            <span class="whitespace-nowrap">เข้าสู่ระบบ</span>
+          </div>
+        </a>
+
+        <a href="#" class="h-14 w-full p-2 text-sm">
+          <div class="flex flex-col text-center">
+
+            <i class="fa fa-user fa-2x"  aria-hidden="true"></i>
+            <span class="whitespace-nowrap">สมัครสมาชิก</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+    <div class="mt-4">
+      <div class="flex flex-col w-full text-center justify-center">
+
+        <a href="/">
+          <div class="text-4xl">คุณจะ</div>
+          <div class="text-7xl">กดปุ่มไหม?</div>
+        </a>
+        <a href="/123/yes" class="bg-wait hover:bg-click mx-auto w-full h-96">
+
+        </a>
+
+        <div class="border rounded p-4 max-w-2xl justify-center w-full mx-auto my-4">
+          คุณมีสายตาที่ดี
+        </div>
+
+        <div class="max-w-2xl justify-center w-full mx-auto my-4">
+          แต่
+        </div>
+
+        <div class="border rounded p-4 max-w-2xl justify-center w-full mx-auto my-4">
+          คุณเห็นปู่ยิงหัวพี่เขา
+        </div>
+        
+        <div class="max-w-2xl justify-center w-full mx-auto my-4">
+          <button class="ring-1 ring-white rounded-md p-2 px-8 text-xl text-sky-400 bg-white hover:bg-sky-500 hover:text-white">
+            ฉันจะไม่
+          </button>
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
